@@ -8,25 +8,8 @@ import requests
 check_url = "https://reportedh5.17wanxiao.com/sass/api/epmpics"
 
 # POST提交的json字段，根据自己的修改
-jsons = {"businessType": "epmpics", "method": "submitUpInfo",
-        "jsonData": {"deptStr": {"deptid": deptId, "text": text},
-                     "areaStr": areaStr,
-                     "reportdate": round(time.time()*1000), "customerid": "1999", "deptid": deptId, "source": "alipay",
-                     "templateid": "pneumonia", "stuNo": stuNum, "username": userName, "phonenum": phoneNum,
-                     "userid": userId, "updatainfo": [{"propertyname": "bodyzk", "value": "正常温度(小于37.3)"},
-                                                          {"propertyname": "istouchcb", "value": "自己家中"},
-                                                          {"propertyname": "sfwz2", "value": "内地学生"},
-                                                          {"propertyname": "symptom", "value": "无"},
-                                                          {"propertyname": "homehealth", "value": "无"},
-                                                          {"propertyname": "isConfirmed", "value": "无"},
-                                                          {"propertyname": "ownbodyzk", "value": "良好"},
-                                                          {"propertyname": "ishborwh", "value": "无"},
-                                                          {"propertyname": "outdoor", "value": "绿色"},
-                                                          {"propertyname": "isContactFriendIn14", "value": "没有"},
-                                                          {"propertyname": "ownPhone", "value": phoneNum},
-                                                          {"propertyname": "emergencyContact", "value": emergency},
-                                                          {"propertyname": "mergencyPeoplePhone",
-                                                           "value": emergencyPhone}], "gpsType": 0}}
+with open("sojson.com.json",'r') as load_f:
+jsons = json.load(load_f)
 
 response = requests.post(check_url, json=jsons)
 # 以json格式打印json字符串
