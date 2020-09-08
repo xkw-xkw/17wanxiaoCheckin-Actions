@@ -9,7 +9,7 @@ check_url = "https://reportedh5.17wanxiao.com/sass/api/epmpics"
 
 # POST提交的json字段，根据自己的修改
 with open("sojson.com.json",'r') as load_f:
-jsons = json.load(load_f)
+    jsons = json.load(load_f)
 
 response = requests.post(check_url, json=jsons)
 # 以json格式打印json字符串
