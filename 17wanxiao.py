@@ -35,6 +35,12 @@ jsons = {
 	"token": "270c27a3-594b-4ca1-a4f5-7b411660e502"
 }
 
+nowtime = datetime.datetime.now()
+if nowtime.hour > 22
+	jsons["customerAppTypeRuleId"] = 146
+if nowtime.houe > 13
+	jsons["customerAppTypeRuleId"] = 148
+
 response = requests.post(check_url, json=jsons)
 
 res = json.dumps(response.json(), sort_keys=True, indent=4, ensure_ascii=False)
