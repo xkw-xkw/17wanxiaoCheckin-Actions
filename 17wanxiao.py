@@ -37,9 +37,9 @@ jsons = {
 
 nowhour = datetime.datetime.now().hour
 if nowhour > 22:
-	jsons["customerAppTypeRuleId"] = 146
-if nowhour > 13:
-	jsons["customerAppTypeRuleId"] = 148
+	js["jsonData"]["customerAppTypeRuleId"] = 146
+elif nowhour > 13:
+	js["jsonData"]["customerAppTypeRuleId"] = 148
 
 response = requests.post(check_url, json=jsons)
 
