@@ -35,7 +35,7 @@ jsons = {
 	"token": "270c27a3-594b-4ca1-a4f5-7b411660e502"
 }
 
-nowtime = datetime.datetime.now()
+nowtime = datetime.time.now()
 if nowtime.hour > 22:
 	jsons["customerAppTypeRuleId"] = 146
 if nowtime.hour > 13:
