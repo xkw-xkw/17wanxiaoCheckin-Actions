@@ -1,6 +1,6 @@
 {
 	"businessType": "school",
-	"SassRequestVo": 10000,
+	"method": "1",
 	"add": null,
 	"areaStr": "{\"province\":\"河南省\",\"city\":\"郑州市\",\"district\":\"中原区\",\"streetNumber\":\"100-25号楼\",\"street\":\"雪松路\",\"pois\":\"河南工业大学莲花街校区\",\"lng\":\"113.553669\",\"lat\":\"34.833717\",\"address\":\"中原区雪松路100-25号楼河南工业大学莲花街校区\",\"text\":\"河南省-郑州市\",\"code\":\"\"}",
 	"cardNo": "130535199909070017",
