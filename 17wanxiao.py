@@ -35,12 +35,6 @@ jsons = {
 	"token": "638b7d2c-d9f3-4a30-952c-3111a4575eb2"
 }
 
-nowhour = datetime.datetime.now().hour
-if nowhour > 21:
-	jsons["jsonData"]["customerAppTypeRuleId"] = 146
-elif nowhour > 12:
-	jsons["jsonData"]["customerAppTypeRuleId"] = 148
-
 response = requests.post(check_url, json=jsons)
 
 res = json.dumps(response.json(), sort_keys=True, indent=4, ensure_ascii=False)
