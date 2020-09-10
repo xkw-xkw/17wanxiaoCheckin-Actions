@@ -29,7 +29,7 @@ jsons = {
 			"propertyname": "symptom",
 			"value": "无症状"
 		}],
-		"customerAppTypeRuleId": 148,
+		"customerAppTypeRuleId": 147,
 		"clockState": 0
 	},
 	"token": "638b7d2c-d9f3-4a30-952c-3111a4575eb2"
